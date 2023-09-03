@@ -9,6 +9,8 @@ This project was created as a coursework. The project is a two-level game platfo
 The goal is to collect as many coins as possible and avoid enemies, including an intelligent one that moves towards the players within a certain radius.
 <hr />
 
+## Stack: Express, Node, Pug, Sass
+
 ![изображение](https://github.com/galinaOkhotnikova/game/assets/71720610/82cdfec4-bd82-44bf-9a62-90d61d671456)
 
 ![изображение](https://github.com/galinaOkhotnikova/game/assets/71720610/77120c03-3627-4921-badf-7a98f08e8359)

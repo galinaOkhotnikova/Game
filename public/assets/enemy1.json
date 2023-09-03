@@ -1,0 +1,34 @@
+{
+    "frames": {
+        "enemy1": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 42
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 42
+            },
+            "sourceSize": {
+                "w": 32,
+                "h": 42
+            }
+        }
+    },
+    "meta": {
+        "app": "https://www.leshylabs.com/apps/sstool/",
+        "version": "Leshy SpriteSheet Tool v0.8.4",
+        "image": "enemy1.png",
+        "size": {
+            "w": 32,
+            "h": 42
+        },
+        "scale": 1
+    }
+}

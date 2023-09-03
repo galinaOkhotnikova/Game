@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="30" height="8" tilewidth="64" tileheight="64" infinite="0" nextlayerid="5" nextobjectid="23">
+ <tileset firstgid="1" name="set2_background" tilewidth="64" tileheight="64" tilecount="70" columns="10">
+  <image source="source/set2_background.png" width="640" height="480"/>
+ </tileset>
+ <tileset firstgid="71" name="tilesheet_complete" tilewidth="64" tileheight="64" tilecount="264" columns="22">
+  <image source="source/tilesheet_complete.png" width="1408" height="768"/>
+ </tileset>
+ <tileset firstgid="335" name="player" tilewidth="66" tileheight="92" tilecount="0" columns="0">
+  <image source="assets/player.png" width="38" height="50"/>
+ </tileset>
+ <tileset firstgid="336" name="enemy1" tilewidth="32" tileheight="42" tilecount="1" columns="1">
+  <image source="assets/enemy1.png" width="32" height="42"/>
+ </tileset>
+ <tileset firstgid="337" name="enemy2" tilewidth="64" tileheight="38" tilecount="1" columns="1">
+  <image source="assets/enemy2.png" width="64" height="38"/>
+ </tileset>
+ <tileset firstgid="338" name="player" tilewidth="38" tileheight="50" tilecount="1" columns="1">
+  <image source="assets/player.png" width="38" height="50"/>
+ </tileset>
+ <layer id="1" name="background" width="30" height="8">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <layer id="2" name="ground" width="30" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,72,73,74,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,72,73,74,0,0,0,0,0,72,73,73,73,74,0,0,0,0,0,0,0,0,0,72,74,
+72,73,73,73,74,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,72,74,71,71,
+71,71,71,71,71,72,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,74,71,71,71,71
+</data>
+ </layer>
+ <objectgroup id="4" name="objects">
+  <object id="1" name="coin" class="Coin" gid="107" x="447" y="320" width="64" height="64"/>
+  <object id="2" name="coin" class="Coin" gid="107" x="1728" y="384" width="64" height="64"/>
+  <object id="3" name="coin" class="Coin" gid="107" x="1024" y="320" width="64" height="64"/>
+  <object id="4" name="coin" class="Coin" gid="107" x="1088" y="320" width="64" height="64"/>
+  <object id="5" name="coin" class="Coin" gid="107" x="960" y="320" width="64" height="64"/>
+  <object id="6" name="coin" class="Coin" gid="107" x="1024" y="448" width="64" height="64"/>
+  <object id="7" name="coin" class="Coin" gid="107" x="1088" y="448" width="64" height="64"/>
+  <object id="8" name="coin" class="Coin" gid="107" x="192" y="384" width="64" height="64"/>
+  <object id="16" name="door" class="Door" gid="242" x="1856" y="320" width="64" height="64"/>
+  <object id="19" name="enemy1" class="Enemy1" gid="336" x="719" y="254" width="32" height="42"/>
+  <object id="21" gid="337" x="1343" y="424" width="64" height="38"/>
+  <object id="22" name="player" class="Player" gid="338" x="0" y="384" width="38" height="50"/>
+ </objectgroup>
+</map>

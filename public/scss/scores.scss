@@ -1,0 +1,22 @@
+@import "nullstyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+
+@keyframes title {
+    from {
+        text-shadow: 0 0 10px rgb(124, 13, 13), 0 0 20px rgb(185, 9, 9), 0 0 30px #9c0918, 0 0 40px #b60505, 0 0 50px #ba0719, 0 0 60px #982020, 0 0 80px #7d1b1b;
+    }
+
+    to {
+        text-shadow: 0 0 20px rgb(146, 2, 2), 0 0 30px #7c071e, 0 0 40px #ad4549, 0 0 50px #7a2026, 0 0 60px #b62a2a, 0 0 70px #ae4e4ede, 0 0 80px #c52f2f;
+    }
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(27, 27, 27);
+}

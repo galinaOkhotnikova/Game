@@ -1,0 +1,26 @@
+doctype html
+html(lang='ru')
+html
+    head
+        script(src="./public/js/saves.js")
+        script(type="module" src="./public/js/main.js")
+        link(rel="stylesheet", href="/public/css/main.css")
+
+    body(onload="setData()")
+        div(class="wrapper" id="root")
+            .header
+                div(class="header__title title") Game
+            .game
+                .container
+                    .game__row
+                        .game__left
+                            .game__player
+                                span(class="title2") Игрок: 
+                                span(id="name")
+                            .game__level
+                                span(class="title2") Уровень: 
+                                span(id="level") 1
+                            .game__score
+                                span(class="title2") Баллы: 
+                                span(id="score") 0
+                        canvas(class="game__field" id="game__field" width="750" height="512")                    

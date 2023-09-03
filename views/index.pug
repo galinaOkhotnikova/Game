@@ -1,0 +1,19 @@
+doctype html
+html(lang='ru')
+html
+    head
+        script(src="./public/js/login.js")
+        link(rel="stylesheet", href="/public/css/style.css")
+
+    body(onload="read()")
+        .wrapper
+            .header
+                div(class="header__title title") Game
+            .container
+                .input-name
+                    .input-name__row
+                    form(class="input-name__input")
+                        label Введите имя:
+                            br
+                            input(class="input-name__form" id="username" placeholder="Имя пользователя")
+                            input(class = "input-name__btn" type = "Submit" value = "Начать игру" onclick='store(); return nextPage()')

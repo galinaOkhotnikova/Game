@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="30" height="8" tilewidth="64" tileheight="64" infinite="0" nextlayerid="5" nextobjectid="31">
+ <tileset firstgid="1" name="set2_background" tilewidth="64" tileheight="64" tilecount="70" columns="10">
+  <image source="source/set2_background.png" width="640" height="480"/>
+ </tileset>
+ <tileset firstgid="71" name="tilesheet_complete" tilewidth="64" tileheight="64" tilecount="264" columns="22">
+  <image source="source/tilesheet_complete.png" width="1408" height="768"/>
+ </tileset>
+ <tileset firstgid="335" name="enemy1" tilewidth="32" tileheight="42" tilecount="1" columns="1">
+  <image source="assets/enemy1.png" width="32" height="42"/>
+ </tileset>
+ <tileset firstgid="336" name="set1_background" tilewidth="64" tileheight="64" tilecount="70" columns="10">
+  <image source="source/set1_background.png" width="640" height="480"/>
+ </tileset>
+ <tileset firstgid="406" name="coin" tilewidth="22" tileheight="22" tilecount="1" columns="1">
+  <image source="assets/coin.png" width="22" height="22"/>
+ </tileset>
+ <tileset firstgid="407" name="player" tilewidth="38" tileheight="50" tilecount="1" columns="1">
+  <image source="assets/player.png" width="38" height="50"/>
+ </tileset>
+ <tileset firstgid="408" name="enemy2" tilewidth="64" tileheight="38" tilecount="1" columns="1">
+  <image source="assets/enemy2.png" width="64" height="38"/>
+ </tileset>
+ <tileset firstgid="409" name="exit" tilewidth="48" tileheight="55" tilecount="1" columns="1">
+  <image source="assets/exit.png" width="48" height="55"/>
+ </tileset>
+ <layer id="1" name="background" width="30" height="8">
+  <data encoding="csv">
+336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,
+336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,
+336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,
+336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,
+336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,
+336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,
+336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,
+336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336
+</data>
+ </layer>
+ <layer id="2" name="ground" width="30" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,204,205,206,0,0,204,205,205,206,0,0,0,0,0,0,0,204,205,205,205,206,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,203,203,203,203,204,205,205,205,206,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,204,205,205,206,0,0,0,203,203,203,203,203,203,203,203,203,204,206,0,0,0,0,0,0,
+204,205,205,205,205,205,203,203,203,203,204,205,206,203,203,203,203,203,203,203,203,203,203,203,204,205,205,205,205,206,
+203,203,203,203,203,203,203,203,203,203,203,203,203,203,203,203,203,203,203,203,203,203,203,203,203,203,203,203,203,203
+</data>
+ </layer>
+ <objectgroup id="4" name="objects">
+  <object id="1" name="coin" class="Coin" gid="107" x="576" y="192" width="64" height="64"/>
+  <object id="2" name="coin" class="Coin" gid="107" x="1648" y="383" width="64" height="64"/>
+  <object id="3" name="coin" class="Coin" gid="107" x="960" y="192" width="64" height="64"/>
+  <object id="4" name="coin" class="Coin" gid="107" x="704" y="384" width="64" height="64"/>
+  <object id="5" name="coin" class="Coin" gid="107" x="896" y="192" width="64" height="64"/>
+  <object id="6" name="coin" class="Coin" gid="107" x="1600" y="192" width="64" height="64"/>
+  <object id="7" name="coin" class="Coin" gid="107" x="1216" y="256" width="64" height="64"/>
+  <object id="8" name="coin" class="Coin" gid="107" x="192" y="384" width="64" height="64"/>
+  <object id="22" name="player" class="Player" gid="407" x="0" y="384" width="38" height="50"/>
+  <object id="24" name="enemy2" class="Enemy2" gid="408" x="1856" y="359" width="64" height="38"/>
+  <object id="26" name="enemy1" class="Enemy1" gid="335" x="260" y="387" width="32" height="42"/>
+  <object id="27" name="enemy1" class="Enemy1" gid="335" x="448" y="320" width="32" height="42"/>
+  <object id="29" name="enemy1" class="enemy1" gid="335" x="1280" y="256" width="32" height="42"/>
+  <object id="30" name="exit" class="Exit" gid="409" x="1797" y="192" width="48" height="55"/>
+ </objectgroup>
+</map>
